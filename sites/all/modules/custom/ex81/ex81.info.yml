@@ -1,0 +1,11 @@
+name: hello form
+description: First Custom Drupal 8 Module 
+package: Custom
+type: module  
+version: 1.0 
+core: 8.x
+core_version_requirement: '^8 || ^9'
+version: 8.x-0.0.1
+dependencies:
+  - node
+  - block
