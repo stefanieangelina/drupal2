@@ -1,0 +1,30 @@
+name: hsc_theme
+description: Responsive theme HSC.
+type: theme
+package: other
+base theme: classy
+core_version_requirement: ^8 || ^9
+# core: 8.x
+
+libraries:
+  - hsc_theme/global-styling
+ 
+regions:
+  branding: Branding
+  navigation: Main navigation
+  search: Search
+  featured: Featured
+  content: Content
+  right_sidebar: Right sidebar
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom
+ 
+# dependencies:
+#   - core/drupal
+#   - core/drupal.debounce
+#   - core/drupalSettings
+
+Stylesheets-remove:
+  -”Remove Stylesheets”

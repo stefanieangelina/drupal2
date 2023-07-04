@@ -1,0 +1,16 @@
+<?php 
+    /**
+    * Implements hook_theme().
+    */
+    function hello_module_theme() {
+        return [
+            'welcome_body' => [
+                'template' => 'welcome-body',
+                'variables' => [
+                    'body' => 'Default body text'
+                ]
+            ]
+        ];
+    }
+
+?>

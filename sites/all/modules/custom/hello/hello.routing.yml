@@ -1,0 +1,16 @@
+hello_world.content:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloController::content'
+    _title: 'hello'
+  requirements:
+    _permission: 'access content'
+
+# my_module_name.route_name
+hello_module.welcome:
+  path: '/welcome'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloController::welcome'
+    _title: 'welcome'
+  requirements:
+    _permission: 'access content'
