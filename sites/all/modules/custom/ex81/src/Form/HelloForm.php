@@ -45,6 +45,13 @@
                 '#required' => TRUE,
             ];
 
+            $form['title2'] = [
+                '#type' => 'textfield',
+                '#title' => $this->t('Title'),
+                '#description' => $this->t('Enter the title of the book. Note that the title must be at least 10 characters in length.'),
+                '#required' => TRUE,
+            ];
+
             $form['accept'] = array(
                 '#type' => 'checkbox',
                 '#title' => $this
