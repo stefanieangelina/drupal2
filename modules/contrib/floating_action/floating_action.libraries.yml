@@ -1,0 +1,7 @@
+floating_action.styling:
+  version: VERSION
+  css:
+    theme:
+      css/floating_style.css: {}
+  js:
+    js/distance_axis.js: {}

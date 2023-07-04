@@ -1,0 +1,7 @@
+floating_action.configure:
+  path: '/admin/config/floating_action'
+  defaults:
+    _title: 'Configure floating'
+    _form: '\Drupal\floating_action\Form\FloatingActionSettingsForm'
+  requirements:
+    _permission: 'view the administration theme'

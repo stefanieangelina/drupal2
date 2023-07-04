@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Entity\EntityForm;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_help().
+ */
+function floating_action_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.floating_action':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Help detach actions buttons to floating views, usefull to quick edit long content') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function floating_action_form_alter(array &$form, FormStateInterface $form_state) {
+  $config = \Drupal::config('floating_action.settings');
+  $entity = NULL;
+  if ($form_state->getFormObject() instanceof EntityForm) {
+    $entity = $form_state->getFormObject()->getEntity();
+  };
+  $enable = FALSE;
+  if ($entity instanceof NodeInterface) {
+    $enable_bundles = $config->get('bundle') ?? [];
+    $enable = in_array($entity->bundle(), $enable_bundles);
+  }
+  if (!$enable) {
+    // Check for the path.
+    $current_path = \Drupal::request()->getRequestUri();
+    $applied_path = $config->get('path');
+    if ($applied_path) {
+      $paths = explode("\r\n", $applied_path);
+      if (in_array($current_path, $paths)) {
+        $enable = TRUE;
+      }
+    }
+  }
+  if ($enable) {
+    $form['#attributes']['class'][] = $enable ? 'float-enabled': '';
+    $position = $config->get('position') ?? 'top-right';
+    $form['actions']['#attributes']['class'][] = $config->get('position') ?? 'top-right';
+    if ($config->get('horizontal') || $config->get('vertical')) {
+      $parts = explode('-', $position);
+      $distance = [
+        $parts[0] => $config->get('vertical') . 'px',
+        $parts[1] => $config->get('horizontal') . 'px',
+      ];
+      $form['#attached']['drupalSettings']['axis_distance'] = $distance;
+    }
+    $form['#attached']['library'][] = 'floating_action/floating_action.styling';
+  }
+}

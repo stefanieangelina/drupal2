@@ -1,0 +1,50 @@
+.float-enabled #edit-actions {
+  position: fixed;
+  z-index: 9999;
+  opacity: .8;
+  border: 1px dashed;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: #e4e4e4;
+}
+.float-enabled #edit-actions:hover {
+  opacity: 1;
+}
+
+.float-enabled .top-left {
+  top: 50px;
+  left: 20px;
+}
+
+.float-enabled .top-center {
+  top: 50px;
+  left: 50%;
+}
+
+.float-enabled .top-right {
+  top: 50px;
+  right: 20px;
+}
+.float-enabled .middle-left {
+  top: 50%;
+  left: 20px;
+}
+.float-enabled .middle-right {
+  top: 50%;
+  right: 20px;
+}
+
+.float-enabled .bottom-left {
+  bottom: 50px;
+  left: 20px;
+}
+
+.float-enabled .bottom-center {
+  bottom: 50px;
+  left: 50%;
+}
+
+.float-enabled .bottom-right {
+  bottom: 50px;
+  right: 20px;
+}
