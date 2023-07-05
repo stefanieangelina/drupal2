@@ -3,7 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '6155948ddfc467864e936c4e44b5793c82a9e4a0',
+        'reference' => 'fee892859231178a07e4a31d91417e408d8bce14',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -493,6 +493,15 @@
                 0 => '8.9.20',
             ),
         ),
+        'drupal/flexslider' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '8.x-2.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/flexslider',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/floating_action' => array(
             'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
@@ -580,7 +589,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '6155948ddfc467864e936c4e44b5793c82a9e4a0',
+            'reference' => 'fee892859231178a07e4a31d91417e408d8bce14',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
