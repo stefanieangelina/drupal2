@@ -1,0 +1,10 @@
+name: 'OwlCarousel2'
+type: module
+description: 'OwlCarousel2 Implementation'
+core: 8.x
+package: 'Carousel'
+
+# Information added by Drupal.org packaging script on 2022-12-24
+version: '8.x-1.0'
+project: 'owlcarousel2'
+datestamp: 1671894812

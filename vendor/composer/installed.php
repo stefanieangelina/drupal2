@@ -3,7 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'a7319c8788f4e337ba6cbd15e238b067ddbc67fb',
+        'reference' => '6155948ddfc467864e936c4e44b5793c82a9e4a0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -132,6 +132,15 @@
             'replaced' => array(
                 0 => '8.9.20',
             ),
+        ),
+        'drupal/blazy' => array(
+            'pretty_version' => '2.16.0',
+            'version' => '2.16.0.0',
+            'reference' => '8.x-2.16',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/blazy',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'drupal/block' => array(
             'dev_requirement' => false,
@@ -571,7 +580,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'a7319c8788f4e337ba6cbd15e238b067ddbc67fb',
+            'reference' => '6155948ddfc467864e936c4e44b5793c82a9e4a0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -655,6 +664,15 @@
                 0 => '8.9.20',
             ),
         ),
+        'drupal/owlcarousel2' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => '8.x-1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/owlcarousel2',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/page_cache' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -732,6 +750,24 @@
             'replaced' => array(
                 0 => '8.9.20',
             ),
+        ),
+        'drupal/slick' => array(
+            'pretty_version' => '2.9.0',
+            'version' => '2.9.0.0',
+            'reference' => '8.x-2.9',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/slick',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/slick_views' => array(
+            'pretty_version' => '2.7.0',
+            'version' => '2.7.0.0',
+            'reference' => '8.x-2.7',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/slick_views',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'drupal/standard' => array(
             'dev_requirement' => false,
