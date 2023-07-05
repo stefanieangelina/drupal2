@@ -9,6 +9,9 @@
 .layout-header {
   padding: 0;
   background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .region-header {
