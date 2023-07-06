@@ -1,5 +1,5 @@
-<div class="item swiper-slide <?php print ((isset($slide->caption_align) && $slide->caption_align) ? $slide->caption_align : 'center_center'); ?>" style="height:500px;">
-   <div class="gavias-slider-image slide <?php print $video_class ?>" <?php print $data_bg_video ?> style="transform:translateY(-30%); <?php print $image_background_style; ?>">
+<div class="item swiper-slide <?php print ((isset($slide->caption_align) && $slide->caption_align) ? $slide->caption_align : 'center_center'); ?>" style="height:635px">
+   <div class="gavias-slider-image slide <?php print $video_class ?>" <?php print $data_bg_video ?> style="transform:translateY(-30%); background-color: #fff !important; <?php print $image_background_style; ?>">
       <?php if(isset($slide->overlay_enable) && $slide->overlay_enable == '1') echo '<div class="gavias-slide-overlay"></div>' ?>
       <div class="slider-content">
          <div class="container">

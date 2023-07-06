@@ -452,7 +452,7 @@ describe('ScrollSpy', () => {
     it('should clear selection if above the first section', () => {
       return new Promise(resolve => {
         fixtureEl.innerHTML = [
-          '<div id="header" style="height: 500px;"></div>',
+          '<div id="header" style="height:600px; width:100%"></div>',
           '<nav id="navigation" class="navbar">',
           '  <ul class="navbar-nav">',
           '    <li class="nav-item"><a id="one-link"   class="nav-link active" href="#one">One</a></li>',
@@ -496,7 +496,7 @@ describe('ScrollSpy', () => {
     it('should not clear selection if above the first section and first section is at the top', () => {
       return new Promise(resolve => {
         fixtureEl.innerHTML = [
-          '<div id="header" style="height: 500px;"></div>',
+          '<div id="header" style="height: 600px;"></div>',
           '<nav id="navigation" class="navbar">',
           '  <ul class="navbar-nav">',
           '    <li class="nav-item"><a id="one-link" class="nav-link active" href="#one">One</a></li>',

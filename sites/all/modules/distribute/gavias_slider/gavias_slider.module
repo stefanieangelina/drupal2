@@ -129,6 +129,7 @@ function gavias_slider_preprocess_slide($slide) {
     $style[] = "height: {$slide->height}px;";
     if(isset($slide->background_color) && $slide->background_color){
         $style[] = "background-color: {$slide->background_color};"; 
+        $style[] = "background-size: cover;"; 
     }else{
         $style[] = "background-color: #ccc;"; 
     }

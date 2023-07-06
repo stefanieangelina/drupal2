@@ -134,7 +134,8 @@ function gavias_slider_preprocess_slide($slide) {
     }
 
     if(isset($slide->background_position) && $slide->background_position){
-        $style[] = "background-position: {$slide->background_position};"; 
+        $style[] = "background-position: {$slide->background_position};";
+        $style[] = "background-size: cover;";  
      }
 
      if(isset($slide->background_position) && $slide->background_position){
